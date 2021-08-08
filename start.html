@@ -2,12 +2,16 @@
 <html lang="en">  
 <head>  
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>  
+
+
+
 </head>  
 <body ng-app="myapp">  
 <div ng-controller="HelloController" >  
 <h2>Hello {{helloTo.title}} !</h2>  
 </div>  
-  
+
+
 <script>  
 angular.module("myapp", [])  
     .controller("HelloController", function($scope) {  
@@ -15,5 +19,23 @@ angular.module("myapp", [])
         $scope.helloTo.title = "World, AngularJS";  
     } );  
 </script>  
+
+<div ng-app="" ng-init="firstName='Ajeet'">  
+  <p>Input something in the input box:</p>  
+  <p>Name: <input type="text" ng-model="firstName"></p>  
+  <p>You wrote: {{ firstName }}</p>  
+  </div>  
+
+  <div data-ng-app="" data-ng-init="quantity=1;price=20"> >  
+      <h2>Cost Calculator</h2>  
+    Quantity: <input type="number" ng-model="quantity">  
+    Price: <input type="number" ng-model="price">  
+    <p><b>Total in rupees:</b> {{quantity * price}}</p>  
+    </div>  
+
+    <div>  
+      <p>A simple expression example: {{ 5 * 5 }}</p>  
+      </div>  
+
 </body>  
 </html>   
