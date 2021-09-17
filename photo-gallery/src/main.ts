@@ -12,7 +12,7 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
 
-import { defineCustomElements } from '@ionic/pwa-elements/loader';
+// import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
-// Call the element loader after the platform has been bootstrapped
-defineCustomElements(window);
+// // Call the element loader after the platform has been bootstrapped
+// defineCustomElements(window);
