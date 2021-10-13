@@ -6,6 +6,17 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
+
+  <ion-fab vertical="buttom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
+
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
