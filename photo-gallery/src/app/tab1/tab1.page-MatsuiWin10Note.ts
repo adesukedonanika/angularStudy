@@ -10,13 +10,11 @@ import { Storage } from '@capacitor/storage';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-
-
 export class Tab1Page {
-  constructor() {}
 
-
-  public photos: Photo[] = [];
+  constructor() {
+    
+  }
 
   public async addNewToGallery() {
     // Take a photo
@@ -25,9 +23,7 @@ export class Tab1Page {
       source: CameraSource.Camera,
       quality: 100
     });
-
-    this.photos.unshift({
-      path: "./cameraFiles/",
-      webPath: capturedPhoto.webPath});
   }
+
+
 }
